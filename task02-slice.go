@@ -6,6 +6,6 @@ func reverse(input []int64) (result []int64) {
 	for i, v := range input {
 		res[len(res)-1-i] = v
 	}
-	copy(result, res)
+	result = res
 	return
 }
